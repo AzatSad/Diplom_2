@@ -1,0 +1,22 @@
+[
+  "test_authorization.py::TestLoginUser::test_authorization_existing_user",
+  "test_authorization.py::TestLoginUser::test_authorization_with_invalid_login_and_password",
+  "test_get_orders.py::TestGetOrders::test_get_orders_with_authorized_user",
+  "test_get_orders.py::TestGetOrders::test_get_orders_with_unauthorized_user",
+  "test_login.py::TestLoginUser::test_authorization_existing_user",
+  "test_login.py::TestLoginUser::test_authorization_with_invalid_login_and_password",
+  "test_orders.py::TestCreateOrder::test_create_order_with_authorization",
+  "test_orders.py::TestCreateOrder::test_create_order_with_invalid_ingredients",
+  "test_orders.py::TestCreateOrder::test_create_order_without_authorization",
+  "test_orders.py::TestCreateOrder::test_create_order_without_ingredients",
+  "test_profile_update.py::TestProfileUpdate::test_update_user_with_authorization[AnotherName-AnotherPassword]",
+  "test_profile_update.py::TestProfileUpdate::test_update_user_with_authorization[UpdateName-UpdatePassword]",
+  "test_profile_update.py::TestProfileUpdate::test_update_user_with_authorization_with_mail_used",
+  "test_profile_update.py::TestProfileUpdate::test_update_user_without_authorization[email-mail@mail.ru]",
+  "test_profile_update.py::TestProfileUpdate::test_update_user_without_authorization[name-Azat1]",
+  "test_profile_update.py::TestProfileUpdate::test_update_user_without_authorization[password-password]",
+  "test_registration.py::TestRegistrationUser::test_create_duplicate_user",
+  "test_registration.py::TestRegistrationUser::test_create_user_missing_one_field",
+  "test_registration.py::TestRegistrationUser::test_example",
+  "test_registration.py::TestRegistrationUser::test_unique_user"
+]

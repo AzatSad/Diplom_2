@@ -1,0 +1,4 @@
+{
+  "test_login.py::TestLoginUser::test_authorization_existing_user": true,
+  "test_registration.py::TestRegistrationUser::test_example": true
+}
