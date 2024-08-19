@@ -15,13 +15,11 @@ class TestRegistrationUser:
 
     @allure.title('Создать пользователя, который уже зарегистрирован')
     def test_create_duplicate_user(self, registration_user_fixture):
-        user_data = {"email": "sadertdinov_4@gmail.com", "password": "12345678", "name": "Azat"}
         register_user = next(registration_user_fixture)
         user_1 = register_user(USER_DATA_EXISTING)
-        user_2 = register_user(USER_DATA_EXISTING)
-        response_2 = user_2['response']
-        assert response_2.status_code == 403
-        assert response_2.json()['message'] == "User already exists"
+        response_1 = user_1['response']
+        assert response_1.status_code == 403
+        assert response_1.json()['message'] == "User already exists"
 
     @allure.title('Создать пользователя без заполнения одного из обязательных полей')
     def test_create_user_missing_one_field(self, registration_user_fixture):

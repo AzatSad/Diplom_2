@@ -27,8 +27,7 @@ def registration_user_fixture(api_client):
         })
         return user
 
-    try:
-        yield register_user
-    finally:
-        if user.get("accessToken"):
-            api_client.delete_user(authorization=user.get("accessToken"))
+    yield register_user
+
+    if user.get("accessToken"):
+        api_client.delete_user(authorization=user.get("accessToken"))
