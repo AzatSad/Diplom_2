@@ -1,0 +1,10 @@
+{
+  "test_login.py::TestLoginUser::test_authorization_existing_user": true,
+  "test_registration.py::TestRegistrationUser::test_example": true,
+  "test_registration.py::TestRegistrationUser::test_unique_user": true,
+  "test_profile_update.py::TestProfileUpdate::test_update_user_with_authorization[AnotherName-AnotherPassword]": true,
+  "test_profile_update.py::TestProfileUpdate::test_update_user_with_authorization_with_mail_used": true,
+  "test_authorization.py::TestLoginUser::test_authorization_existing_user": true,
+  "test_get_orders.py::TestGetOrders::test_get_orders_with_authorized_user": true,
+  "test_profile_update.py::TestProfileUpdate::test_update_user_with_authorization[UpdateName-UpdatePassword]": true
+}
